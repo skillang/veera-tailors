@@ -519,28 +519,27 @@ footer h3 {
 }
 
 .float-whatsapp {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    left: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    position: fixed !important;
+    width: 60px !important;
+    height: 60px !important;
+    bottom: 40px !important;
+    left: 40px !important;
+    background-color: #25d366 !important;
+    color: #FFF !important;
+    border-radius: 50px !important;
+    text-align: center !important;
+    font-size: 30px !important;
+    z-index: 100 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
 }
 
 .float-whatsapp:hover {
-    background-color: #128C7E;
-    color: #FFF;
+    /* background-color: #128C7E; */
+    /* color: #FFF; */
     transform: scale(1.1);
 }
 

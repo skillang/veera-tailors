@@ -4,7 +4,7 @@
 */
 
 :root {
-    --primary-color: #8e2180;
+    --primary-color: #8A2062;
     /* Rich purple from the image */
     --primary-dark: #701966;
     /* Darker shade of the primary color */
@@ -57,12 +57,14 @@ header {
     box-shadow: none !important;
 }
 
-.navbar-brand {
-    color: var(--text-light);
-    font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-family: 'Arial', sans-serif;
+.navbar-brand img {
+    /* color: var(--text-light); */
+    height: 50px !important;
+    width: auto !important;
+    /* font-size: 2.5rem; */
+    /* font-weight: 600; */
+    /* letter-spacing: 1px; */
+    /* font-family: 'Arial', sans-serif; */
 }
 
 .navbar-nav .nav-link {

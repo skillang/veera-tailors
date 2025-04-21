@@ -1,0 +1,578 @@
+/* 
+   Veera Women's Tailor - Custom CSS
+   Color palette inspired by the image: rich purple with white accents
+*/
+
+:root {
+    --primary-color: #8e2180;
+    /* Rich purple from the image */
+    --primary-dark: #701966;
+    /* Darker shade of the primary color */
+    --primary-light: #a92d99;
+    /* Lighter shade of the primary color */
+    --accent-color: #f9f3f8;
+    /* Light cream/off-white */
+    --text-light: #ffffff;
+    /* White text */
+    --text-dark: #333333;
+    /* Dark text */
+    --section-padding: 80px 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0 auto 30px;
+}
+
+section {
+    padding: var(--section-padding);
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    padding: 15px 0;
+    box-shadow: none !important;
+}
+
+.navbar-brand {
+    color: var(--text-light);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light);
+    margin: 0 15px;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--accent-color);
+}
+
+.phone-number {
+    margin-left: 20px;
+}
+
+.phone-number a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.phone-number i {
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--text-light);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-color);
+    padding: 0;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-light);
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.btn-primary {
+    background-color: var(--text-light);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--text-light);
+    color: var(--text-light);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* About Us Section */
+.about-section {
+    background-color: #ffffff;
+}
+
+.about-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Services Section */
+.services-section {
+    background-color: var(--accent-color);
+}
+
+.services-section h2 {
+    color: var(--primary-color);
+}
+
+.service-category {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.service-category:hover {
+    transform: translateY(-10px);
+}
+
+.service-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.service-list li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #ffffff;
+}
+
+.gallery-section h2 {
+    color: var(--primary-color);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    transition: all 0.5s;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(142, 33, 128, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-info {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.gallery-info h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.gallery-info p {
+    font-size: 0.95rem;
+}
+
+/* Why Choose Us Section */
+.why-us-section {
+    background-color: var(--accent-color);
+}
+
+.why-us-section h2 {
+    color: var(--primary-color);
+}
+
+.feature-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-box h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #ffffff;
+}
+
+.testimonials-section h2 {
+    color: var(--primary-color);
+}
+
+.testimonial-item {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    margin: 20px 50px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-item h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color);
+    padding: 25px;
+    border-radius: 50%;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--accent-color);
+}
+
+.contact-section h2 {
+    color: var(--primary-color);
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.info-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.info-item p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.info-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.info-item a:hover {
+    color: var(--primary-dark);
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 60px 0 30px;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-links li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: var(--text-light);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.website-link {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 20px 0;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+
+    .btn-book {
+        margin: 10px 0;
+    }
+
+    .whatsapp-number {
+        margin: 15px 0;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-section .carousel {
+        margin-top: 30px;
+    }
+
+    .service-category,
+    .feature-box {
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+    }
+
+    .footer-links,
+    .social-icons {
+        justify-content: center;
+    }
+
+    .website-link {
+        text-align: center;
+    }
+}

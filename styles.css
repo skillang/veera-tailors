@@ -278,16 +278,17 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(142, 33, 128, 0.8);
+    /* background-color: rgba(142, 33, 128, 0.8); */
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3s;
 }
 
 .gallery-item:hover .gallery-overlay {
     opacity: 1;
+    background-color: rgba(142, 33, 128, 0.8);
 }
 
 .gallery-item:hover img {
